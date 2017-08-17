@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3D0B83395D0F6F72A57C06F5 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2B1EF7818ECE85C66E58EE /* Pods_Smack.framework */; };
+		807DF9C91F45EF9100E806E5 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807DF9C81F45EF9100E806E5 /* ChatVC.swift */; };
+		807DF9CB1F45EF9D00E806E5 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807DF9CA1F45EF9D00E806E5 /* ChannelVC.swift */; };
+		807DF9CC1F45F48500E806E5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807DF9C31F44DD0900E806E5 /* SWRevealViewController.m */; };
 		80DC1DE71F4462C500EA0574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC1DE61F4462C500EA0574 /* AppDelegate.swift */; };
-		80DC1DE91F4462C500EA0574 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC1DE81F4462C500EA0574 /* ViewController.swift */; };
 		80DC1DEC1F4462C500EA0574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DC1DEA1F4462C500EA0574 /* Main.storyboard */; };
 		80DC1DEE1F4462C500EA0574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80DC1DED1F4462C500EA0574 /* Assets.xcassets */; };
 		80DC1DF11F4462C500EA0574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DC1DEF1F4462C500EA0574 /* LaunchScreen.storyboard */; };
@@ -21,9 +23,10 @@
 		807DF9C21F44DD0800E806E5 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		807DF9C31F44DD0900E806E5 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		807DF9C41F44DD0900E806E5 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		807DF9C81F45EF9100E806E5 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		807DF9CA1F45EF9D00E806E5 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		80DC1DE31F4462C500EA0574 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80DC1DE61F4462C500EA0574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80DC1DE81F4462C500EA0574 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80DC1DEB1F4462C500EA0574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80DC1DED1F4462C500EA0574 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80DC1DF01F4462C500EA0574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,10 +64,32 @@
 			path = "Supporting files";
 			sourceTree = "<group>";
 		};
+		807DF9C51F45EF6800E806E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				807DF9C81F45EF9100E806E5 /* ChatVC.swift */,
+				807DF9CA1F45EF9D00E806E5 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		807DF9C61F45EF7100E806E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		807DF9C71F45EF7500E806E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		80DC1DDA1F4462C500EA0574 = {
 			isa = PBXGroup;
 			children = (
-				807DF9C11F44DCF700E806E5 /* Supporting files */,
 				80DC1DE51F4462C500EA0574 /* Smack */,
 				80DC1DE41F4462C500EA0574 /* Products */,
 				B13E91C065311A842E5B1675 /* Pods */,
@@ -83,8 +108,11 @@
 		80DC1DE51F4462C500EA0574 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				807DF9C71F45EF7500E806E5 /* Model */,
+				807DF9C61F45EF7100E806E5 /* View */,
+				807DF9C51F45EF6800E806E5 /* Controller */,
+				807DF9C11F44DCF700E806E5 /* Supporting files */,
 				80DC1DE61F4462C500EA0574 /* AppDelegate.swift */,
-				80DC1DE81F4462C500EA0574 /* ViewController.swift */,
 				80DC1DEA1F4462C500EA0574 /* Main.storyboard */,
 				80DC1DED1F4462C500EA0574 /* Assets.xcassets */,
 				80DC1DEF1F4462C500EA0574 /* LaunchScreen.storyboard */,
@@ -225,8 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80DC1DE91F4462C500EA0574 /* ViewController.swift in Sources */,
+				807DF9CB1F45EF9D00E806E5 /* ChannelVC.swift in Sources */,
+				807DF9C91F45EF9100E806E5 /* ChatVC.swift in Sources */,
 				80DC1DE71F4462C500EA0574 /* AppDelegate.swift in Sources */,
+				807DF9CC1F45F48500E806E5 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +400,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.moniak.Smack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting files/Smack-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smack/Supporting files/Smack-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,7 +418,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.moniak.Smack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting files/Smack-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smack/Supporting files/Smack-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
